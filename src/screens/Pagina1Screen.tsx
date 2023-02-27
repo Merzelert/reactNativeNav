@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, Button, TouchableOpacity } from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons';
 import { StackScreenProps } from '@react-navigation/stack';
 import { styles } from '../themes/appTheme';
 
@@ -43,6 +44,7 @@ export const Pagina1Screen = ({ navigation }: Props) => {//navigation es una pro
                     <Text style={styles.botonGrandeTexto}>
                         Persona 1
                     </Text>
+                    <Icon name="earth-outline" size={30} color="white" />
                 </TouchableOpacity>
 
                 <TouchableOpacity
@@ -65,6 +67,7 @@ export const Pagina1Screen = ({ navigation }: Props) => {//navigation es una pro
                     <Text style={styles.botonGrandeTexto}>
                         Persona 2
                     </Text>
+                    <Icon name="paw-outline" size={30} color="white" />
                 </TouchableOpacity>
             </View>
         </View>

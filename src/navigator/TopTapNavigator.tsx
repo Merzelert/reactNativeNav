@@ -5,8 +5,9 @@ import { ChatScreen } from '../screens/ChatScreen';
 import { ContactsScreen } from '../screens/ContactsScreen';
 import { AlbumsScreen } from '../screens/AlbumsScreen';
 import { colors } from '../themes/appTheme';
+import Icon from 'react-native-vector-icons/Ionicons';
 
-import { LogBox, Text } from 'react-native';
+import { LogBox } from 'react-native';
 LogBox.ignoreLogs(['Sending']); // Ignore log notification by message sending
 
 const Tab = createMaterialTopTabNavigator();
@@ -32,18 +33,18 @@ export const TopTapNavigator = () => {
                     let iconName: string = '';
                     switch (route.name) {
                         case 'Chats':
-                            iconName = 'Ch';
+                            iconName = 'chatbubbles-outline';
                             break;
 
                         case 'Contact':
-                            iconName = 'Co';
+                            iconName = 'people-circle-outline';
                             break;
 
                         case 'Albums':
-                            iconName = 'Al';
+                            iconName = 'images-outline';
                             break;
                     }
-                    return <Text style={{ color }}>{iconName}</Text>;
+                    return <Icon name={iconName} size={25} color={color} />;
                 },
             })}
         >

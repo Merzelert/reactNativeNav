@@ -1,11 +1,11 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Text } from 'react-native';
 import { Tab1Screen } from '../screens/Tab1Screen';
 // import { Tab2Screen } from '../screens/Tab2Screen';
 import { StackNavigator } from './StackNavigator';
 import { colors } from '../themes/appTheme';
 import { TopTapNavigator } from './TopTapNavigator';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 const Tab = createBottomTabNavigator();
 
@@ -32,16 +32,16 @@ export const Tabs = () => {
                     let iconName: string = '';
                     switch (route.name) {
                         case 'Tab1Screen':
-                            iconName = 'T1';
+                            iconName = 'fast-food-outline';
                             break;
                         case 'Tab2Screen':
-                            iconName = 'T2';
+                            iconName = 'headset-outline';
                             break;
                         case 'StackNavigator':
-                            iconName = 'ST';
+                            iconName = 'qr-code';
                             break;
                     }
-                    return <Text style={{ color }}>{iconName}</Text>;
+                    return <Icon name={iconName} size={25} color={color} />;
                 },
             })
             }

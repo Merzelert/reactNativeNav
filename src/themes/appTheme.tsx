@@ -43,10 +43,14 @@ export const styles = StyleSheet.create({
         borderRadius: 100,
     },
     menuContainer: {
-        marginVertical: 30,
-        marginHorizontal: 50,
+        marginVertical: 20,
+        marginHorizontal: 40,
     },
     menuBoton: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        //separa entre items
+        justifyContent: 'space-between',
         marginVertical: 10,
     },
     menuTexto: {

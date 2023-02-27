@@ -3,8 +3,9 @@ import { createDrawerNavigator, DrawerContentComponentProps, DrawerContentScroll
 // import { StackNavigator } from './StackNavigator';
 import { SettingsScreen } from '../screens/SettingsScreen';
 import { useWindowDimensions, View, Image, TouchableOpacity, Text } from 'react-native';
-import { styles } from '../themes/appTheme';
+import { colors, styles } from '../themes/appTheme';
 import { Tabs } from './Tabs';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 const Drawer = createDrawerNavigator();
 
@@ -51,6 +52,7 @@ const MenuInterno = ({ navigation }: DrawerContentComponentProps) => {
                 style={styles.menuBoton}
                 onPress={() => navigation.navigate('Tabs')}
                 >
+                    <Icon name="people" size={25} color={colors.primary} />
                     <Text style={styles.menuTexto}>Navegacion Stack</Text>
                 </TouchableOpacity>
 
@@ -58,6 +60,7 @@ const MenuInterno = ({ navigation }: DrawerContentComponentProps) => {
                 style={styles.menuBoton}
                 onPress={() => navigation.navigate('SettingsScreen')}
                 >
+                    <Icon name="settings-outline" size={25} color={colors.primary} />
                     <Text style={styles.menuTexto}>Settings</Text>
                 </TouchableOpacity>
             </View>
