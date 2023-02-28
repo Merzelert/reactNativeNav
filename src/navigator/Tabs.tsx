@@ -32,7 +32,7 @@ export const Tabs = () => {
                     let iconName: string = '';
                     switch (route.name) {
                         case 'Tab1Screen':
-                            iconName = 'fast-food-outline';
+                            iconName = 'card-outline';
                             break;
                         case 'Tab2Screen':
                             iconName = 'headset-outline';

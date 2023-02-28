@@ -13,14 +13,14 @@ export const Tab1Screen = () => {
         <View style={styles.globalMargin}>
             <Text style={styles.title}>Iconos</Text>
             <Text>
-                <Icon name="earth-outline" size={80} color={colors.primary} />
-                <Icon name="fast-food-outline" size={80} color={colors.primary} />
-                <Icon name="headset-outline" size={80} color={colors.primary} />
-                <Icon name="map-outline" size={80} color={colors.primary} />
-                <Icon name="people" size={80} color={colors.primary} />
-                <Icon name="qr-code" size={80} color={colors.primary} />
-                <Icon name="leaf" size={80} color={colors.primary} />
-                <Icon name="paw" size={80} color={colors.primary} />
+                <Icon name="earth-outline" size={60} color={colors.primary} />
+                <Icon name="fast-food-outline" size={60} color={colors.primary} />
+                <Icon name="headset-outline" size={60} color={colors.primary} />
+                <Icon name="map-outline" size={60} color={colors.primary} />
+                <Icon name="people" size={60} color={colors.primary} />
+                <Icon name="qr-code" size={60} color={colors.primary} />
+                <Icon name="leaf" size={60} color={colors.primary} />
+                <Icon name="paw" size={60} color={colors.primary} />
             </Text>
         </View>
 

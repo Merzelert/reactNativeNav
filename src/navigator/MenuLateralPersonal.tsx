@@ -49,16 +49,16 @@ const MenuInterno = ({ navigation }: DrawerContentComponentProps) => {
             {/* Opciones de menú */}
             <View style={styles.menuContainer}>
                 <TouchableOpacity
-                style={styles.menuBoton}
-                onPress={() => navigation.navigate('Tabs')}
+                    style={styles.menuBoton}
+                    onPress={() => navigation.navigate('Tabs')}
                 >
                     <Icon name="people" size={25} color={colors.primary} />
                     <Text style={styles.menuTexto}>Navegacion Stack</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity
-                style={styles.menuBoton}
-                onPress={() => navigation.navigate('SettingsScreen')}
+                    style={styles.menuBoton}
+                    onPress={() => navigation.navigate('SettingsScreen')}
                 >
                     <Icon name="settings-outline" size={25} color={colors.primary} />
                     <Text style={styles.menuTexto}>Settings</Text>
