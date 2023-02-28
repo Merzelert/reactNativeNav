@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import Icon from 'react-native-vector-icons/Ionicons';
 import { View, Text } from 'react-native';
-import { styles, colors } from '../themes/appTheme';
+import { styles } from '../themes/appTheme';
+import { TouchableIcon } from '../components/TouchableIcon';
 
 export const Tab1Screen = () => {
 
@@ -13,14 +13,14 @@ export const Tab1Screen = () => {
         <View style={styles.globalMargin}>
             <Text style={styles.title}>Iconos</Text>
             <Text>
-                <Icon name="earth-outline" size={60} color={colors.primary} />
-                <Icon name="fast-food-outline" size={60} color={colors.primary} />
-                <Icon name="headset-outline" size={60} color={colors.primary} />
-                <Icon name="map-outline" size={60} color={colors.primary} />
-                <Icon name="people" size={60} color={colors.primary} />
-                <Icon name="qr-code" size={60} color={colors.primary} />
-                <Icon name="leaf" size={60} color={colors.primary} />
-                <Icon name="paw" size={60} color={colors.primary} />
+                <TouchableIcon iconName="earth-outline" />
+                <TouchableIcon iconName="fast-food-outline" />
+                <TouchableIcon iconName="headset-outline" />
+                <TouchableIcon iconName="map-outline" />
+                <TouchableIcon iconName="people" />
+                <TouchableIcon iconName="qr-code" />
+                <TouchableIcon iconName="leaf" />
+                <TouchableIcon iconName="paw" />
             </Text>
         </View>
 
